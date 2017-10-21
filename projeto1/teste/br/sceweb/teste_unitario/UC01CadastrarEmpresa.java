@@ -48,8 +48,7 @@ public class UC01CadastrarEmpresa {
 	 */
 	@Test
 	public void CT01UC01FBCadastra_com_sucesso() {
-		String url = "jdbc:mysql://localhost/sceweb";
-		assertEquals(1,empresaDAO.adiciona(empresa));
+				assertEquals(1,empresaDAO.adiciona(empresa));
 	}
 	
 	@Test
