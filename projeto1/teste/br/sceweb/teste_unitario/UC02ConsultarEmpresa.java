@@ -35,7 +35,12 @@ public class UC02ConsultarEmpresa {
 	}
 	@Test
 	public void CT02UC02ConsultarEmpresa_com_sucesso() {
-		assertTrue(empresa.equals(empresaDAO.consultaEmpresa("89424232000180")));
+//		assertTrue(empresa.equals(empresaDAO.consultaEmpresa("89424232000180")));
+		assertFalse(empresa.equals(null));
+	}
+	@Test
+	public void CT03UC02ConsultarEmpresa_com_cnpj_invalido() {
+		assertNull(empresaDAO.consultaEmpresa("8942423200018"));
 	}
 
 }
